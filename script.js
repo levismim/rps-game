@@ -13,9 +13,14 @@ function getCompChoice() {
 }
 //  get user's choice
 
-let button = document.querySelector(button)
-
-button.addEventListener("click", playRound())
+let buttons = document.getElementById("buttons")
+    let rock = document.createElement("button")
+    let paper = document.createElement("button")
+    let scissors = document.createElement("button")
+    buttons.appendChild(rock)
+    buttons.appendChild(paper)
+    buttons.appendChild(scissors)
+    
 
 //  create and initialize variables for scores in global scope
 let humanScore = 0;
@@ -69,7 +74,5 @@ function playGame() {
 
 }
 
-
-playGame()
 //  output string value representing winner
 // increment each score variable based on winner
