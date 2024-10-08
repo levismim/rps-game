@@ -12,10 +12,11 @@ function getCompChoice() {
 }  
 }
 //  get user's choice
-function getHumanChoice() {
-    let userInput = prompt("Rock, paper, or scissors?").toLowerCase();
-    return userInput
-}
+
+let button = document.querySelector(button)
+
+button.addEventListener("click", playRound())
+
 //  create and initialize variables for scores in global scope
 let humanScore = 0;
 let computerScore = 0;  
@@ -55,12 +56,6 @@ if (humanChoice == computerChoice) {
 }
 
 function playGame() {
-playRound()
-playRound()
-playRound()
-playRound()
-playRound()
-
     if (computerScore > humanScore) {
         console.log("You lost to a computer!")
 } 
@@ -73,6 +68,7 @@ playRound()
     
 
 }
+
 
 playGame()
 //  output string value representing winner
