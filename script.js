@@ -55,14 +55,12 @@ function getCompChoice() {
     });
     
 
-      
 
-//  create and initialize variables for scores in global scope
 let humanScore = 0;
 let computerScore = 0;  
 document.getElementById("hScoreID").textContent = "Your Score: " + humanScore;
 document.getElementById("cScoreID").textContent = "The Computer's Score: " + computerScore;
-//  play round using computer's choice and user's choice as arguments (make case insensitive)
+
 function playRound(humanChoice, computerChoice) {
         if (humanChoice == computerChoice) {
             document.getElementById("hScoreID").textContent = "Draw! Your Score: " + humanScore;
